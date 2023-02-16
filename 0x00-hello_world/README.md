@@ -1,5 +1,5 @@
-#0x00. C -Hello, World
+# 0x00. C -Hello, World
 
-##Tasks
+## Tasks
 
-- [0](./0-preprocessor).
+- [0-preprocessor](./0-preprocessor).

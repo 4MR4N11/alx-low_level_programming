@@ -2,7 +2,7 @@
 
 ## Tasks
 
-- [0-positive_or_negative.c](./0-posotove_or_negative.c)
+- [0-positive_or_negative.c](./0-positive_or_negative.c)
 - [1-last_digit.c](./9-last_digit.c)
 - [2-print_alphabet.c](./2-print_alphabet.c)
 - [3-print_alphabets.c](./3-print_alphabets.c)

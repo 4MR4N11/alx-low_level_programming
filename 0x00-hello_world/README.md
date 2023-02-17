@@ -9,3 +9,5 @@
 - [4-puts.c](./4-puts.c).
 - [5-printf.c](./5-printf.c).
 - [6-size.c](./6-size.c).
+- [100-intel](./100-intel).
+- [101-quote.c](./101-quote.c).

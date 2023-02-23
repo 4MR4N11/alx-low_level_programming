@@ -6,28 +6,27 @@
 
 void more_numbers(void)
 {
-	int i;
 	int j;
+	int line;
 	char c;
 
-	i = 0;
-	while (i <= 10)
+	line = 0;
+	j = 0;
+	while (line < 10)
 	{
-		j = 0;
 		c = '0';
+		j = 0;
 		while (j <= 14)
 		{
-			if (j > 9)
-			{
+			if (j == 10)
+				c = '0';
+			if (j >= 10)
 				_putchar('1');
-				if (j == 10)
-					c = '0';
-			}
 			_putchar(c);
 			c++;
 			j++;
 		}
 		_putchar('\n');
-		i++;
+		line++;
 	}
 }

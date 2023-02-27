@@ -46,17 +46,21 @@ static int check_string(char *s)
  * conv - convert to integer.
  * @s: pointer to string.
  * @i: index of where the digit found in the string.
+ * @sign: sign count.
  * Return: the integer.
  */
 
-static int conv(char *s, int i)
+static int conv(char *s, int i, int sign)
 {
 	int num;
 
 	num = 0;
 	while (s[i] <= '9' && s[i] >= '0')
 	{
-		num += s[i] - '0';
+		if (sign % 2 != 0)
+			num += (s[i] - '0') * -1;
+		else
+			num += s[i] - '0';
 		if ((s[i + 1] <= '9') && (s[i + 1] >= '0'))
 			num *= 10;
 		i++;
@@ -84,12 +88,10 @@ int _atoi(char *s)
 	{
 		if (s[i] <= '9' && s[i] >= '0')
 		{
-			num = conv(s, i);
+			num = conv(s, i, sign);
 			break;
 		}
 		i++;
 	}
-	if ((sign % 2) != 0)
-		num *= -1;
 	return (num);
 }

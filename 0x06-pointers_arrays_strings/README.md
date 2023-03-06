@@ -10,3 +10,6 @@
 - [5-string_toupper.c](./5-string_toupper.c)
 - [6-cap_string.c](./6-cap_string.c)
 - [7-leet.c](./7-leet.c)
+- [100-rot13.c](./100-rot13.c)
+- [101-print_number.c](./101-print_number.c)
+- [102-magic.c](./102-magic.c)

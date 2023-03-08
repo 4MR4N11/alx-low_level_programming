@@ -18,6 +18,19 @@ int palindrome_checker(char *s, int i, int j)
 }
 
 /**
+ * len_counter - get length of string.
+ * @s: pointer to string.
+ * Return: length of @s.
+ */
+
+int len_counter(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + len_counter(s + 1));
+}
+
+/**
  * is_palindrome - checks if a string is palindrome.
  * @s: pointer to string.
  * Return: 1 if @s is palindrome, 0 if not.
@@ -25,10 +38,7 @@ int palindrome_checker(char *s, int i, int j)
 
 int is_palindrome(char *s)
 {
-	int i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	return (palindrome_checker(s, i - 1, 0));
+	if (*s == '\0')
+		return (1);
+	return (palindrome_checker(s, len_counter(s) - 1, 0));
 }

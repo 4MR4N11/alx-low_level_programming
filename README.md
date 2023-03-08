@@ -14,3 +14,4 @@
 - [0x05](./0x05-pointers_arrays_strings): Pointers, arrays and strings.
 - [0x06](./0x06-pointers_arrays_strings): More pointers, arrays and strings.
 - [0x07](./0x07-pointers_arrays_strings): Even more pointers, arrays and strings.
+- [0x08](./0x08-recursion): Recursion.

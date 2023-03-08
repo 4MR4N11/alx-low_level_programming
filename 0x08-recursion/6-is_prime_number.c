@@ -6,8 +6,7 @@
  * @i: check if it's  @n's divider.
  * Return: 1 if n is prime, 0 if not.
  */
-
-static prime_checker(int n, int i)
+int prime_checker(int n, int i)
 {
 	if (i >= n)
 		return (1);

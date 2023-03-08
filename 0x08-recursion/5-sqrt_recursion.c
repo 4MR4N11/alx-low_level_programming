@@ -7,7 +7,7 @@
  * Return: square root of @n, -1 if @n not have a natural square root.
  */
 
-static int sqrt_f(int n, int i)
+int sqrt_f(int n, int i)
 {
 	if (i * i > n)
 		return (-1);

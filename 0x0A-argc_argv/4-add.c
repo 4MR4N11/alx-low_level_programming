@@ -110,14 +110,14 @@ int main(int ac, char **av)
 
 	i = 1;
 	res = 0;
-	if (ac < 2)
+	if (ac == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
 	while (av[i])
 	{
-		if (_atoi(av[i]) == -1)
+		if (_atoi(av[i]) == -1 || _atoi(av[i]) < 0)
 		{
 			printf("Error\n");
 			return (1);

@@ -15,4 +15,5 @@
 - [0x06](./0x06-pointers_arrays_strings): More pointers, arrays and strings.
 - [0x07](./0x07-pointers_arrays_strings): Even more pointers, arrays and strings.
 - [0x08](./0x08-recursion): Recursion.
+- [0x09](./0x09-static_libraries): Static libraries.
 - [0x0A](./0x0A-argc_argv): argc, argv.

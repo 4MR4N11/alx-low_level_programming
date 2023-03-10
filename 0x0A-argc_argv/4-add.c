@@ -81,7 +81,7 @@ int _atoi(char *s)
 	int num;
 
 	if (check_string(s))
-		return (0);
+		return (-1);
 	sign = sign_count(s);
 	i = 0;
 	while (s[i])
@@ -117,7 +117,7 @@ int main(int ac, char **av)
 	}
 	while (av[i])
 	{
-		if (_atoi(av[i]) == 0)
+		if (_atoi(av[i]) == -1)
 		{
 			printf("Error\n");
 			return (1);

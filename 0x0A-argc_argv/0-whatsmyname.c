@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point.
+ * main - Entry point, prints the name of the program, followed by \n.
  * @argc: number of arguments.
  * @argv: array of pointers to arguments.
  * Return: 0 (Success).

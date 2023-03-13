@@ -11,6 +11,8 @@ int _strlen(char *str)
 	int i;
 
 	i = 0;
+	if (!str)
+		return (i);
 	while (str[i])
 		i++;
 	return (i);
@@ -37,10 +39,10 @@ char *str_concat(char *s1, char *s2)
 	new = malloc(sizeof(char) * len + 1);
 	if (!new)
 		return (NULL);
-	while (s1[i])
+	while (s1 && s1[i])
 		new[j++] = s1[i++];
 	i = 0;
-	while (s2[i])
+	while (s2 && s2[i])
 		new[j++] = s2[i++];
 	new[j] = '\0';
 	return (new);

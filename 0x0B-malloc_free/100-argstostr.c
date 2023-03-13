@@ -33,14 +33,14 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	i = 0;
+	i = -1;
 	len = 0;
 	while (++i < ac)
 		len += (_strlen(av[i]) + 1);
 	str = malloc(sizeof(char) * len);
 	if (!str)
 		return (NULL);
-	i = 1;
+	i = 0;
 	k = 0;
 	while (i < ac)
 	{

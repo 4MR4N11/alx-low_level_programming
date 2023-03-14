@@ -33,7 +33,7 @@ int words_counter(char *str)
 	words = 0;
 	while (str[i])
 	{
-		while (str[i] && (str[i] <= 32 && str[i] >= 9))
+		while (str[i] && str[i] == 32)
 			i++;
 		if (str[i] && str[i] > 32)
 			words++;
@@ -92,16 +92,18 @@ char **strtow(char *str)
 	if (!str || (str[0] == '\0'))
 		return (NULL);
 	height = words_counter(str);
+	if (!height)
+		return (NULL);
 	words = malloc(sizeof(char *) * (height + 1));
 	if (!words)
 		return (NULL);
 	words[height] = NULL;
 	while (row < height)
 	{
-		while (str[i] && (str[i] <= 32 && str[i] >= 9))
+		while (str[i] && str[i] == 32)
 			i++;
 		start = i;
-		while (str[len + i] && (str[len + i] > 32))
+		while (str[len + i] && (str[len + i] != 32))
 			len++;
 		i += len;
 		words[row] = filler(str, start, len);

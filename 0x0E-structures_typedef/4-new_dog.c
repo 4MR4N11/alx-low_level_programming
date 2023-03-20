@@ -53,6 +53,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_struct;
 
+	if (!name || !owner || age < 0)
+		return (NULL);
 	new_struct = malloc(sizeof(dog_t));
 	if (!new_struct)
 		return (NULL);
@@ -65,6 +67,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_struct->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (!new_struct->owner)
 	{
+		free(new_struct->name);
 		free(new_struct);
 		return (NULL);
 	}

@@ -61,6 +61,7 @@ void print_all(const char * const format, ...)
 {
 	int i, j;
 	va_list list;
+	char sep[3] = "";
 
 	t_list op[] = {
 		{'c', print_char},
@@ -78,7 +79,11 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == op[j].c)
 			{
+				printf("%s", sep);
 				op[j].print_func(list);
+				sep[0] = ',';
+				sep[1] = ' ';
+				sep[2] = '\0';
 				break;
 			}
 			j++;

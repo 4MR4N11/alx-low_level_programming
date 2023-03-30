@@ -23,3 +23,4 @@
 - [0x0E](./0x0E-structures_typedef): Structures, typedef.
 - [0x0F](./0x0F-function_pointers): Function pointers.
 - [0x10](./0x10-variadic_functions): Variadic functions.
+- [0x12](./0x12-singly_linked_lists): Singly linked lists.

@@ -70,7 +70,7 @@ int main(int ac, char **av)
 	buff = malloc(sizeof(char) * BUFFER_SIZE);
 	if (!buff)
 		return (101);
-	while ((rsize = read(fd1, buff, BUFFER_SIZE)))
+	while ((rsize = read(fd1, buff, BUFFER_SIZE)) > 0)
 	{
 		if (write(fd2, buff, rsize) == -1)
 		{

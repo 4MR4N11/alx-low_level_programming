@@ -19,3 +19,5 @@ This Project is about Bit manipulation in C programming language.
 - [4-clear_bit.c](./4-clear_bit.c): File that contains a function `clear_bit` that sets the value of a bit to `0` at a given index.
 
 - [5-flip_bits.c](./5-flip_bits.c): File that contains a function `flip_bits` that returns the number of bits you would need to flip to get from one number to another.
+
+- [100-get_endianness.c](./100-get_endianness.c): File that contains a function `get_endianness` that checks the endianness.

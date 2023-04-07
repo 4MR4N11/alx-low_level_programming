@@ -13,14 +13,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t check1, check2;
 	char *buff;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
-	if (fd < 0)
+	if (fd == -1)
 		return (0);
 	buff = malloc(sizeof(char) * letters);
-	if (!buff)
+	if (buff == NULL)
+	{
+		free(buff);
 		return (0);
+	}
 	check1 = read(fd, buff, letters);
 	if (check1 == -1)
 	{

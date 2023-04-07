@@ -22,7 +22,7 @@ void fd_handle(int fd1, int fd2, int check, char **av)
 		if (fd2 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-			if (close(fd1) < 0)
+			if (close(fd1) == -1)
 			{
 				dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1);
 				exit(100);
@@ -32,12 +32,12 @@ void fd_handle(int fd1, int fd2, int check, char **av)
 	}
 	else
 	{
-		if (close(fd1) < 0)
+		if (close(fd1) == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1);
 			exit(100);
 		}
-		if (close(fd2) < 0)
+		if (close(fd2) == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
 			exit(100);
@@ -68,9 +68,11 @@ int main(int ac, char **av)
 	fd2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	fd_handle(fd1, fd2, 1, av);
 	buff = malloc(sizeof(char) * BUFFER_SIZE);
+	if (!buff)
+		return (101);
 	while ((rsize = read(fd1, buff, BUFFER_SIZE)))
 	{
-		if (write(fd2, buff, rsize) < 0)
+		if (write(fd2, buff, rsize) == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			free(buff);
@@ -79,8 +81,10 @@ int main(int ac, char **av)
 		}
 		free(buff);
 		buff = malloc(sizeof(char) * BUFFER_SIZE);
+		if (!buff)
+			return (101);
 	}
-	if (rsize < 0)
+	if (rsize == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		free(buff);
@@ -88,5 +92,6 @@ int main(int ac, char **av)
 		return (98);
 	}
 	free(buff);
+	fd_handle(fd1, fd2, 0, NULL);
 	return (0);
 }

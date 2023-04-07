@@ -20,22 +20,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	buff = malloc(sizeof(char) * letters);
 	if (buff == NULL)
-	{
-		free(buff);
 		return (0);
-	}
 	check1 = read(fd, buff, letters);
 	if (check1 == -1)
 	{
 		free(buff);
-		close(fd);
 		return (0);
 	}
 	check2 = write(STDOUT_FILENO, buff, check1);
 	if (check2 == -1 || check2 != check1)
 	{
 		free(buff);
-		close(fd);
 		return (0);
 	}
 	free(buff);

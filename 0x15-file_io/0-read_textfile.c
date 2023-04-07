@@ -10,39 +10,29 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	size_t i;
-	ssize_t count, check;
-	char c;
+	ssize_t check1, check2;
+	char *buff;
 
-	count = 0;
-	i = 0;
 	if (!filename)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
 		return (0);
-	while (i < letters)
+	buff = malloc(sizeof(char) * letters);
+	check1 = read(fd, buff, letters);
+	if (check1 < 0)
 	{
-
-		check = read(fd, &c, 1);
-		if (check < 0)
-		{
-			close(fd);
-			return (0);
-		}
-		else if (check == 0)
-		{
-			close(fd);
-			return (count);
-		}
-		count += check;
-		if (write(STDOUT_FILENO, &c, 1) < 0)
-		{
-			close(fd);
-			return (0);
-		}
-		i++;
+		free(buff);
+		close(fd);
+		return (0);
+	}
+	check2 = write(STDOUT_FILENO, buff, check1);
+	if (check2 < 0)
+	{
+		free(buff);
+		close(fd);
+		return (0);
 	}
 	close(fd);
-	return (count);
+	return (check2);
 }

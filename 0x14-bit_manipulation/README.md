@@ -21,3 +21,5 @@ This Project is about Bit manipulation in C programming language.
 - [5-flip_bits.c](./5-flip_bits.c): File that contains a function `flip_bits` that returns the number of bits you would need to flip to get from one number to another.
 
 - [100-get_endianness.c](./100-get_endianness.c): File that contains a function `get_endianness` that checks the endianness.
+
+- [101-password](./101-password): File that contains the password for the [crackme2](https://github.com/holbertonschool/0x13.c).

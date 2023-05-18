@@ -28,6 +28,6 @@
 - [0x13](./0x13-more_singly_linked_lists): More singly linked lists.
 - [0x14](./0x14-bit_manipulation): Bit manipulation.
 - [0x15](./0x15-file_io): File I/O.
-- [0x16](./0x16-simple_shell): implement a simple UNIX command interpreter.
+- [0x16](https://github.com/4MR4N11/simple_shell): implement a simple UNIX command interpreter.
 - [0x17](./0x17-doubly_linked_lists): Doubly linked lists.
 

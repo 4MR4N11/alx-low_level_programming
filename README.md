@@ -30,4 +30,5 @@
 - [0x15](./0x15-file_io): File I/O.
 - [0x16](https://github.com/4MR4N11/simple_shell): implement a simple UNIX command interpreter.
 - [0x17](./0x17-doubly_linked_lists): Doubly linked lists.
+- [0x18](./0x18-dynamic_libraries): Dynamic libraries.
 

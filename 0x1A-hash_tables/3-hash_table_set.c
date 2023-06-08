@@ -20,6 +20,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	node->key = (char *)key;
 	node->value = strdup(value);
+	node->next = NULL;
 	index = key_index((const unsigned char *)key, ht->size);
 	if (!ht->array[index])
 		ht->array[index] = node;

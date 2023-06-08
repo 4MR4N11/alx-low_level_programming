@@ -7,3 +7,9 @@ This project is about hash tables in C.
 - [hash_tables.h](./hash_tables.h) - Header file with function prototypes and data structures.
 
 - [0-hash_table_create.c](./0-hash_table_create.c) - Function that creates a hash table.
+
+- [1-djb2.c](./1-djb2.c) - Hash function implementing the djb2 algorithm.
+
+- [2-key_index.c](./2-key_index.c) - Function that gives you the index of a key.
+
+- [3-hash_table_set.c](./3-hash_table_set.c) - Function that adds an element to the hash table.

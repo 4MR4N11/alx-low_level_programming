@@ -13,3 +13,9 @@ This project is about hash tables in C.
 - [2-key_index.c](./2-key_index.c) - Function that gives you the index of a key.
 
 - [3-hash_table_set.c](./3-hash_table_set.c) - Function that adds an element to the hash table.
+
+- [4-hash_table_get.c](./4-hash_table_get.c) - Function that retrieves a value associated with a key.
+
+- [5-hash_table_print.c](./5-hash_table_print.c) - Function that prints a hash table.
+
+- [6-hash_table_delete.c](./6-hash_table_delete.c) - Function that deletes a hash table.

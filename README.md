@@ -31,4 +31,5 @@
 - [0x16](https://github.com/4MR4N11/simple_shell): implement a simple UNIX command interpreter.
 - [0x17](./0x17-doubly_linked_lists): Doubly linked lists.
 - [0x18](./0x18-dynamic_libraries): Dynamic libraries.
-
+- [0x19](https://github.com/4MR4N11/monty): Stacks, Queues - LIFO, FIFO.
+- [0x1A](./0x1A-hash_tables): Hash tables.

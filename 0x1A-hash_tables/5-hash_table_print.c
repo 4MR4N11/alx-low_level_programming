@@ -13,10 +13,7 @@ void hash_table_print(const hash_table_t *ht)
 	int check = 0; /*to check when should print the ", "*/
 
 	if (!ht)
-	{
-		printf("{}\n");
 		return;
-	}
 	printf("{");
 	while (index < ht->size)
 	{

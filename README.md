@@ -33,3 +33,4 @@
 - [0x18](./0x18-dynamic_libraries): Dynamic libraries.
 - [0x19](https://github.com/4MR4N11/monty): Stacks, Queues - LIFO, FIFO.
 - [0x1A](./0x1A-hash_tables): Hash tables.
+- [0x1B](https://github.com/4MR4N11/sorting_algorithms): Sorting algorithms & Big O.

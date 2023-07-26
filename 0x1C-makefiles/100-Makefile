@@ -9,7 +9,7 @@ CC = gcc
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-.PHONE : all clean oclean fclean re
+.PHONY : all clean oclean fclean re
 
 all : $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)

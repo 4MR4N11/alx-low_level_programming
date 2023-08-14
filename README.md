@@ -1,8 +1,8 @@
-# C Language.
+# Low-level Programming.
 
 ## About
 
-- This repository consists of all the C programming projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course.
+- This repository consists of all the Low-level Programming projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course.
 
 ## Projects
 
@@ -34,3 +34,4 @@
 - [0x19](https://github.com/4MR4N11/monty): Stacks, Queues - LIFO, FIFO.
 - [0x1A](./0x1A-hash_tables): Hash tables.
 - [0x1B](https://github.com/4MR4N11/sorting_algorithms): Sorting algorithms & Big O.
+- [0x1C](./0x1C-makefiles): Makefiles.

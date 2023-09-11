@@ -11,9 +11,9 @@
 - [0x02](./0x02-functions_nested_loops): Functions nested loops.
 - [0x03](./0x03-debugging): Debugging.
 - [0x04](./0x04-more_functions_nested_loops): More functions, more nested loops.
-- [0x05](./0x05-pointers_arrays_strings): Pointers, arrays and strings.
-- [0x06](./0x06-pointers_arrays_strings): More pointers, arrays and strings.
-- [0x07](./0x07-pointers_arrays_strings): Even more pointers, arrays and strings.
+- [0x05](./0x05-pointers_arrays_strings): Pointers, arrays, and strings.
+- [0x06](./0x06-pointers_arrays_strings): More pointers, arrays, and strings.
+- [0x07](./0x07-pointers_arrays_strings): Even more pointers, arrays, and strings.
 - [0x08](./0x08-recursion): Recursion.
 - [0x09](./0x09-static_libraries): Static libraries.
 - [0x0A](./0x0A-argc_argv): Argc, argv.
@@ -35,3 +35,4 @@
 - [0x1A](./0x1A-hash_tables): Hash tables.
 - [0x1B](https://github.com/4MR4N11/sorting_algorithms): Sorting algorithms & Big O.
 - [0x1C](./0x1C-makefiles): Makefiles.
+- [0x1E](./0x1E-search_algorithms): Search Algorithms.

@@ -35,4 +35,5 @@
 - [0x1A](./0x1A-hash_tables): Hash tables.
 - [0x1B](https://github.com/4MR4N11/sorting_algorithms): Sorting algorithms & Big O.
 - [0x1C](./0x1C-makefiles): Makefiles.
+- [0x1D](https://github.com/4MR4N11/binary_trees): Binary trees.
 - [0x1E](./0x1E-search_algorithms): Search Algorithms.

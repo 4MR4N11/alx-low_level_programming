@@ -20,17 +20,17 @@ This project is about search algorithms in C.
 
 - [6-O](./6-O) - Space complexity of this function / algorithm:
 
-		```c
-		int **allocate_map(int n, int m)
+	```c
+	int **allocate_map(int n, int m)
+	{
+		int **map;
+
+		map = malloc(sizeof(int *) * n);
+		for (size_t i = 0; i < n; i++)
 		{
-			int **map;
-
-			map = malloc(sizeof(int *) * n);
-			for (size_t i = 0; i < n; i++)
-			{
-				map[i] = malloc(sizeof(int) * m);
-			}
-			return (map);
+			map[i] = malloc(sizeof(int) * m);
 		}
+		return (map);
+	}
 
-		```
+	```
